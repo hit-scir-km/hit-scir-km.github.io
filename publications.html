@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发表论文 - 知识挖掘实验室</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+        
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            height: 70px;
+            padding: 0;
+            transition: all 0.4s ease;
+            transform: translateY(0);
+            z-index: 2050;
+        }
+        .navbar .container { max-width: 1100px; }
+        .navbar-brand img { height: 40px; width: auto; transition: all 0.4s ease; }
+        .navbar.at-top { background-color: #ffffff; box-shadow: 0 1px 4px rgba(0,0,0,0.05); height: 90px; }
+        .navbar.at-top .navbar-brand img { height: 60px; }
+        .navbar-nav { gap: 45px; align-items: center; }
+        .nav-link { color: #222 !important; font-weight: 500; font-size: 16px; padding: 0 !important; }
+
+        
+        body {
+            padding-top: 100px;
+            background-color: #fbfbfb;
+            background-image: url('images/back2.png');
+            background-repeat: repeat;
+            background-size: 200px;
+            background-attachment: scroll;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        
+        .publications-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 12px 36px rgba(0,0,0,0.06);
+        }
+
+        
+        .year-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 18px;
+            color: #333;
+        }
+
+        
+        .pub-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin-bottom: 18px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .pub-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #1f2d3d;
+        }
+        .pub-meta {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .pub-tags { margin-top: 6px; }
+        .pub-tags .tag { display:inline-block; font-size:12px; margin-right:6px; padding:6px 10px; border-radius:14px; background:#f0f0f0; color:#666; }
+        .pub-tags .tag.tag-conf { background: #B81C22; color:#fff; }
+        .pub-tags .tag.tag-year { background: #3A86FF; color:#fff; }
+        .pub-tags .tag.tag-author.first { background: #2D9CDB; color:#fff; }
+        .pub-tags .tag.tag-author.second { background: #6FCF97; color:#fff; }
+        .pub-tags .tag.tag-author.third { background: #F2C94C; color:#222; }
+
+        .pub-actions { margin-top:8px; display:flex; gap:8px; justify-content:flex-end; }
+        .pub-actions .btn { font-size:13px; }
+
+        
+        @media (max-width: 768px) {
+            .publications-container { padding: 18px; }
+            .pub-actions { justify-content: flex-start; }
+        }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top at-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="13.html"><img src="images/KM_1.png" alt="KM"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="KM.html">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="members.html">成员介绍</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">发表论文</a></li>
+                    <li class="nav-item"><a class="nav-link" href="joinus.html">加入我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="publications-container">
+        <h1 style="margin-bottom:18px;">发表论文</h1>
+
+        
+
+        <div class="year-block">
+            <div class="year-title">2026</div>
+
+            <div class="pub-card">
+                <div class="pub-title">CCFQA: A Benchmark for Cross-Lingual and Cross-Modal Speech and Text Factuality Evaluation</div>
+                <div class="pub-meta">Yexing Du, Kaiyuan Liu, Youcheng Pan, Zheng Chu, Bo Yang, Xiaocheng Feng, Yang Xiang, Ming Liu</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">AAAI</span>
+                    <span class="tag tag-year">2026</span>
+                    <span class="tag tag-author first">Du Yexing</span>
+                    <span class="tag tag-author second">Liu Kaiyuan</span>
+                    <span class="tag tag-author third">Pan Youcheng</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">From Sampling to Cognition: Modeling Internal Cognitive Confidence in Language Models for Robust Uncertainty Calibration</div>
+                <div class="pub-meta">Hao Li, Tao He, Jiafeng Liang, Zheng Chu, Ming Liu</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">AAAI</span>
+                    <span class="tag tag-year">2026</span>
+                    <span class="tag tag-author first">Li Hao</span>
+                    <span class="tag tag-author second">He Tao</span>
+                    <span class="tag tag-author third">Liang Jiafeng</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="year-block">
+            <div class="year-title">2025</div>
+
+            <div class="pub-card">
+                <div class="pub-title">MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications</div>
+                <div class="pub-meta">Zike Yuan, Ming Liu, Hui Wang, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">EMNLP</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Yuan Zike</span>
+                    <span class="tag tag-author second">Liu Ming</span>
+                    <span class="tag tag-author third">Wang Hui</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">How do Language Models Reshape Entity Alignment? A Survey of LM-Driven EA Methods: Advances, Benchmarks, and Future</div>
+                <div class="pub-meta">Zerui Chen, Huiming Fan, Qianyu Wang, Tao He, Ming Liu, Chang Heng, Weijiang Yu, Ze Li, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">EMNLP</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Chen Zerui</span>
+                    <span class="tag tag-author second">Fan Huiming</span>
+                    <span class="tag tag-author third">Wang Qianyu</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Making LLMs Better Many-to-Many Speech-to-Text Translators with Curriculum Learning</div>
+                <div class="pub-meta">Yexing Du, Youcheng Pan, Ziyang Ma, Bo Yang, Yifan Yang, Keqi Deng, Xie Chen, Yang Xiang, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Du Yexing</span>
+                    <span class="tag tag-author second">Pan Youcheng</span>
+                    <span class="tag tag-author third">Ma Ziyang</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Investigating and Enhancing the Robustness of Large Multimodal Models Against Temporal Inconsistency</div>
+                <div class="pub-meta">Jiafeng Liang, Shixin Jiang, Xuan Dong, Ning Wang, Zheng Chu, Hui Su, Jinlan Fu, Ming Liu, See-Kiong Ng, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Liang Jiafeng</span>
+                    <span class="tag tag-author second">Jiang Shixin</span>
+                    <span class="tag tag-author third">Dong Xuan</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Ontology-Guided Reverse Thinking Makes Large Language Models Stronger on Knowledge Graph Question Answering</div>
+                <div class="pub-meta">Runxuan Liu, Bei Luo, Jiaqi Li, Baoxin Wang, Ming Liu, Dayong Wu, Shijin Wang, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Liu Runxuan</span>
+                    <span class="tag tag-author second">Luo Bei</span>
+                    <span class="tag tag-author third">Li Jiaqi</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting</div>
+                <div class="pub-meta">Guo Tang, Zheng Chu, Wenxiang Zheng, Junjia Xiang, Yizhuo Li, Weihao Zhang, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Tang Guo</span>
+                    <span class="tag tag-author second">Chu Zheng</span>
+                    <span class="tag tag-author third">Zheng Wenxiang</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">EffiVLM-Bench: A Comprehensive Benchmark for Evaluating Training-Free Acceleration in Large Visual-Language Models</div>
+                <div class="pub-meta">Zekun Wang, Minghua Ma, Zexin Wang, Rongchuan Mou, Liping Shan, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Wang Zekun</span>
+                    <span class="tag tag-author second">Ma Minghua</span>
+                    <span class="tag tag-author third">Wang Zexin</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">From Specific-MLLMs to Omni-MLLMs: A Survey on MLLMs Aligned with Multi-modalities</div>
+                <div class="pub-meta">Shixin Jiang, Jiafeng Liang, Jiyuan Wang, Xuan Dong, Heng Chang, Weichang Yu, Jinhua Du, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Jiang Shixin</span>
+                    <span class="tag tag-author second">Liang Jiafeng</span>
+                    <span class="tag tag-author third">Wang Jiyuan</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Self-Critique Guided Iterative Reasoning for Multi-hop Question Answering</div>
+                <div class="pub-meta">Zheng Chu, Huiming Fan, Jingchang Chen, Qianyu Wang, Mingda Yang, Jiafeng Liang, Zhongjie Wang, Hao Li, Guo Tang, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Chu Zheng</span>
+                    <span class="tag tag-author second">Fan Huiming</span>
+                    <span class="tag tag-author third">Chen Jingchang</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Breaking the Reasoning Barrier: A Survey on LLM Complex Reasoning through the Lens of Self-Evolution</div>
+                <div class="pub-meta">Tao He, Hao Li, Jingchang Chen, Runxuan Liu, Yixin Cao, Lizi Liao, Zihao Zheng, Zheng Chu, Jiafeng Liang, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">He Tao</span>
+                    <span class="tag tag-author second">Li Hao</span>
+                    <span class="tag tag-author third">Chen Jingchang</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Simulation-Free Hierarchical Latent Policy Planning for Proactive Dialogues</div>
+                <div class="pub-meta">Tao He, Lizi Liao, Yixin Cao, Yuanxing Liu, Yiheng Sun, Zerui Chen, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">AAAI</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">He Tao</span>
+                    <span class="tag tag-author second">Lizi Liao</span>
+                    <span class="tag tag-author third">Cao Yixin</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">CFSP: An Efficient Structured Pruning Framework for LLMs with Coarse-to-Fine Activation Information</div>
+                <div class="pub-meta">Yuxin Wang, Minghua Ma, Zekun Wang, Jingchang Chen, Liping Shan, Qing Yang, Dongliang Xu, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">COLING</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Wang Yuxin</span>
+                    <span class="tag tag-author second">Ma Minghua</span>
+                    <span class="tag tag-author third">Wang Zekun</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Towards Faithful Multi-step Reasoning through Fine-Grained Causal-aware Attribution Reasoning Distillation</div>
+                <div class="pub-meta">Zheng Chu, Jingchang Chen, Zhongjie Wang, Guo Tang, Qianglong Chen, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">COLING</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Chu Zheng</span>
+                    <span class="tag tag-author second">Chen Jingchang</span>
+                    <span class="tag tag-author third">Wang Zhongjie</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">GraCoRe: Benchmarking Graph Comprehension and Complex Reasoning in Large Language Models</div>
+                <div class="pub-meta">Zike Yuan, Ming Liu, Hui Wang, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">COLING</span>
+                    <span class="tag tag-year">2025</span>
+                    <span class="tag tag-author first">Yuan Zike</span>
+                    <span class="tag tag-author second">Liu Ming</span>
+                    <span class="tag tag-author third">Wang Hui</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation</div>
+                <div class="pub-meta">Jingchang Chen, Hongxuan Tang, Zheng Chu, Qianglong Chen, Zekun Wang, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">NeurIPS</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Chen Jingchang</span>
+                    <span class="tag tag-author second">Tang Hongxuan</span>
+                    <span class="tag tag-author third">Chu Zheng</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="year-block">
+            <div class="year-title">2024</div>
+
+            <div class="pub-card">
+                <div class="pub-title">Towards Benchmarking Situational Awareness of Large Language Models: Comprehensive Benchmark, Evaluation and Analysis</div>
+                <div class="pub-meta">Guo Tang, Zheng Chu, Wenxiang Zheng, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">EMNLP</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Tang Guo</span>
+                    <span class="tag tag-author second">Chu Zheng</span>
+                    <span class="tag tag-author third">Zheng Wenxiang</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Infrared-LLaVA: Enhancing Understanding of Infrared Images in Multi-Modal Large Language Models</div>
+                <div class="pub-meta">Shixin Jiang, Zerui Chen, Jiafeng Liang, Yanyan Zhao, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">EMNLP</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Jiang Shixin</span>
+                    <span class="tag tag-author second">Chen Zerui</span>
+                    <span class="tag tag-author third">Liang Jiafeng</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Navigate through Enigmatic Labyrinth. A Survey of Chain of Thought Reasoning: Advances, Frontiers and Future</div>
+                <div class="pub-meta">Zheng Chu, Jingchang Chen, Qianglong Chen, Weijiang Yu, Tao He, Haotian Wang, Weihua Peng, Ming Liu, Bing Qin, Ting Liu</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Chu Zheng</span>
+                    <span class="tag tag-author second">Chen Jingchang</span>
+                    <span class="tag tag-author third">Chen Qianglong</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">TimeBench: A Comprehensive Evaluation of Temporal Reasoning Abilities in Large Language Models</div>
+                <div class="pub-meta">Zheng Chu, Jingchang Chen, Qianglong Chen, Weijiang Yu, Haotian Wang, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Chu Zheng</span>
+                    <span class="tag tag-author second">Chen Jingchang</span>
+                    <span class="tag tag-author third">Chen Qianglong</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">BeamAggR: Beam Aggregation Reasoning over Multi-source Knowledge for Multi-hop Question Answering</div>
+                <div class="pub-meta">Zheng Chu, Jingchang Chen, Qianglong Chen, Haotian Wang, Kuan Zhu, Xiyuan Du, Weijiang Yu, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Chu Zheng</span>
+                    <span class="tag tag-author second">Chen Jingchang</span>
+                    <span class="tag tag-author third">Chen Qianglong</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Planning Like Human: A Dual-process Framework for Dialogue Planning</div>
+                <div class="pub-meta">Tao He, Lizi Liao, Yixin Cao, Yuanxing Liu, Ming Liu, Zerui Chen, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">ACL</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">He Tao</span>
+                    <span class="tag tag-author second">Lizi Liao</span>
+                    <span class="tag tag-author third">Yixin Cao</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">GUIDE: A Guideline-Guided Dataset for Instructional Video Comprehension</div>
+                <div class="pub-meta">Jiafeng Liang, Shixin Jiang, Zekun Wang, Haojie Pan, Zerui Chen, Ming Liu, Ruiji Fu, Zhongyuan Wang, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">IJCAI</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Liang Jiafeng</span>
+                    <span class="tag tag-author second">Jiang Shixin</span>
+                    <span class="tag tag-author third">Wang Zekun</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Decompose, Prioritize, and Eliminate: Dynamically Integrating Diverse Representations for Multimodal Named Entity Recognition</div>
+                <div class="pub-meta">Zihao Zheng, Zihan Zhang, Zexin Wang, Ruiji Fu, Ming Liu, Zhongyuan Wang, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">COLING</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Zheng Zihao</span>
+                    <span class="tag tag-author second">Zhang Zihan</span>
+                    <span class="tag tag-author third">Wang Zexin</span>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">SmartTrim: Adaptive Tokens and Attention Pruning for Efficient Vision-Language Models</div>
+                <div class="pub-meta">Zekun Wang, Jingchang Chen, Wangchunshu Zhou, Haichao Zhu, Jiafeng Liang, Liping Shan, Ming Liu, Dongliang Xu, Qing Yang, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">COLING</span>
+                    <span class="tag tag-year">2024</span>
+                    <span class="tag tag-author first">Wang Zekun</span>
+                    <span class="tag tag-author second">Chen Jingchang</span>
+                    <span class="tag tag-author third">Zhou Wangchunshu</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="year-block">
+            <div class="year-title">2023</div>
+
+            <div class="pub-card">
+                <div class="pub-title">MTGER: Multi-view Temporal Graph Enhanced Temporal Reasoning over Time-Involved Document</div>
+                <div class="pub-meta">Zheng Chu, Zekun Wang, Jiafeng Liang, Ming Liu, Bing Qin</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">EMNLP</span>
+                    <span class="tag tag-year">2023</span>
+                    <span class="tag tag-author first">Zheng Chu</span>
+                    <span class="tag tag-author second">Zekun Wang</span>
+                    <span class="tag tag-author third">Jiafeng Liang</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="year-block">
+            <div class="year-title">2022</div>
+
+            <div class="pub-card">
+                <div class="pub-title">Distilled Dual-Encoder Model for Vision-Language Understanding</div>
+                <div class="pub-meta">Zekun Wang, Wenhui Wang, Haichao Zhu, Ming Liu, Bing Qin, Furu Wei</div>
+                <div class="pub-tags">
+                    <span class="tag tag-conf">EMNLP</span>
+                    <span class="tag tag-year">2022</span>
+                    <span class="tag tag-author first">Wang Zekun</span>
+                    <span class="tag tag-author second">Wang Wenhui</span>
+                    <span class="tag tag-author third">Zhu Haichao</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('mainNav');
+    const threshold = 100;
+    window.addEventListener('scroll', function() {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop <= 10) {
+            navbar.classList.add('at-top');
+            navbar.classList.remove('hidden');
+        } else {
+            navbar.classList.remove('at-top');
+        }
+        if (scrollTop > threshold) {
+            if (scrollTop > lastScrollTop) { navbar.classList.add('hidden'); }
+            else { navbar.classList.remove('hidden'); }
+        }
+        lastScrollTop = scrollTop;
+    });
+</script>
+</body>
+</html>
