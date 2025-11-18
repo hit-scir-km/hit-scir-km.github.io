@@ -58,28 +58,32 @@
         }
 
         
+        .hero-banner {
+            position: relative; 
+            padding-top: 0;
+            display: block;
+        }
+
         .hero-bg-wrapper {
-            position: absolute;
-            top: -800px;
-            left: 3%;
-            width: 95vw;
-            max-width: none;
-            height: auto;
-            z-index: -1;
+            position: absolute;  
+    
+            width: 90%; 
+            
+            left: 50%; 
+            
+            transform: translateX(-50%); 
+
+            top: -100px; 
+            bottom: 310px; 
+            z-index: -1; 
             pointer-events: none;
         }
 
         .hero-bg-main {
             width: 100%;
             height: 100%;
-            display: block;
-            opacity: 1;
-        }
-
-        .hero-banner {
-            position: relative;
-            padding-top: 0;
-            display: block;
+            object-fit: cover; 
+            object-position: center bottom; 
         }
 
         .photo-wall-full {
@@ -171,7 +175,7 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="KM.html">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
                     <li class="nav-item"><a class="nav-link" href="members.html">成员介绍</a></li>
                     <li class="nav-item"><a class="nav-link" href="publications.html">发表论文</a></li>
                     <li class="nav-item"><a class="nav-link" href="joinus.html">加入我们</a></li>
