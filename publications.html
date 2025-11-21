@@ -64,24 +64,26 @@
             box-shadow: 0 6px 18px rgba(0,0,0,0.04);
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 8px;
         }
         .pub-title {
             font-size: 1.05rem;
             font-weight: 600;
             color: #1f2d3d;
+            line-height: 1.4;
         }
         .pub-meta {
             color: #666;
             font-size: 0.95rem;
+            line-height: 1.5;
         }
-        .pub-tags { margin-top: 6px; }
-        .pub-tags .tag { display:inline-block; font-size:12px; margin-right:6px; padding:6px 10px; border-radius:14px; background:#f0f0f0; color:#666; }
-        .pub-tags .tag.tag-conf { background: #B81C22; color:#fff; }
-        .pub-tags .tag.tag-year { background: #3A86FF; color:#fff; }
-        .pub-tags .tag.tag-author.first { background: #2D9CDB; color:#fff; }
-        .pub-tags .tag.tag-author.second { background: #6FCF97; color:#fff; }
-        .pub-tags .tag.tag-author.third { background: #F2C94C; color:#222; }
+        
+        .pub-source {
+            margin-top: 4px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #1f2d3d;
+        }
 
         .pub-actions { margin-top:8px; display:flex; gap:8px; justify-content:flex-end; }
         .pub-actions .btn { font-size:13px; }
@@ -114,364 +116,271 @@
     <div class="publications-container">
         <h1 style="margin-bottom:18px;">发表论文</h1>
 
-        
-
+        <!-- 2026 Papers -->
         <div class="year-block">
             <div class="year-title">2026</div>
 
             <div class="pub-card">
                 <div class="pub-title">CCFQA: A Benchmark for Cross-Lingual and Cross-Modal Speech and Text Factuality Evaluation</div>
                 <div class="pub-meta">Yexing Du, Kaiyuan Liu, Youcheng Pan, Zheng Chu, Bo Yang, Xiaocheng Feng, Yang Xiang, Ming Liu</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">AAAI</span>
-                    <span class="tag tag-year">2026</span>
-                    <span class="tag tag-author first">Du Yexing</span>
-                    <span class="tag tag-author second">Liu Kaiyuan</span>
-                    <span class="tag tag-author third">Pan Youcheng</span>
-                </div>
+                <div class="pub-source">AAAI 2026</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">From Sampling to Cognition: Modeling Internal Cognitive Confidence in Language Models for Robust Uncertainty Calibration</div>
                 <div class="pub-meta">Hao Li, Tao He, Jiafeng Liang, Zheng Chu, Ming Liu</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">AAAI</span>
-                    <span class="tag tag-year">2026</span>
-                    <span class="tag tag-author first">Li Hao</span>
-                    <span class="tag tag-author second">He Tao</span>
-                    <span class="tag tag-author third">Liang Jiafeng</span>
-                </div>
+                <div class="pub-source">AAAI 2026</div>
             </div>
         </div>
 
+        <!-- 2025 Papers -->
         <div class="year-block">
             <div class="year-title">2025</div>
 
             <div class="pub-card">
                 <div class="pub-title">MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications</div>
                 <div class="pub-meta">Zike Yuan, Ming Liu, Hui Wang, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">EMNLP</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Yuan Zike</span>
-                    <span class="tag tag-author second">Liu Ming</span>
-                    <span class="tag tag-author third">Wang Hui</span>
-                </div>
+                <div class="pub-source">EMNLP 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">How do Language Models Reshape Entity Alignment? A Survey of LM-Driven EA Methods: Advances, Benchmarks, and Future</div>
                 <div class="pub-meta">Zerui Chen, Huiming Fan, Qianyu Wang, Tao He, Ming Liu, Chang Heng, Weijiang Yu, Ze Li, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">EMNLP</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Chen Zerui</span>
-                    <span class="tag tag-author second">Fan Huiming</span>
-                    <span class="tag tag-author third">Wang Qianyu</span>
-                </div>
+                <div class="pub-source">EMNLP 2025</div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Simulating Before Planning: Constructing Intrinsic User World Model for User-Tailored Dialogue Policy Planning</div>
+                <div class="pub-meta">Tao He, Lizi Liao, Ming Liu, Bing Qin</div>
+                <div class="pub-source">SIGIR 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Making LLMs Better Many-to-Many Speech-to-Text Translators with Curriculum Learning</div>
                 <div class="pub-meta">Yexing Du, Youcheng Pan, Ziyang Ma, Bo Yang, Yifan Yang, Keqi Deng, Xie Chen, Yang Xiang, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Du Yexing</span>
-                    <span class="tag tag-author second">Pan Youcheng</span>
-                    <span class="tag tag-author third">Ma Ziyang</span>
-                </div>
+                <div class="pub-source">ACL 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Investigating and Enhancing the Robustness of Large Multimodal Models Against Temporal Inconsistency</div>
                 <div class="pub-meta">Jiafeng Liang, Shixin Jiang, Xuan Dong, Ning Wang, Zheng Chu, Hui Su, Jinlan Fu, Ming Liu, See-Kiong Ng, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Liang Jiafeng</span>
-                    <span class="tag tag-author second">Jiang Shixin</span>
-                    <span class="tag tag-author third">Dong Xuan</span>
-                </div>
+                <div class="pub-source">ACL 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Ontology-Guided Reverse Thinking Makes Large Language Models Stronger on Knowledge Graph Question Answering</div>
                 <div class="pub-meta">Runxuan Liu, Bei Luo, Jiaqi Li, Baoxin Wang, Ming Liu, Dayong Wu, Shijin Wang, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Liu Runxuan</span>
-                    <span class="tag tag-author second">Luo Bei</span>
-                    <span class="tag tag-author third">Li Jiaqi</span>
-                </div>
+                <div class="pub-source">ACL 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting</div>
                 <div class="pub-meta">Guo Tang, Zheng Chu, Wenxiang Zheng, Junjia Xiang, Yizhuo Li, Weihao Zhang, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Tang Guo</span>
-                    <span class="tag tag-author second">Chu Zheng</span>
-                    <span class="tag tag-author third">Zheng Wenxiang</span>
-                </div>
+                <div class="pub-source">ACL 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">EffiVLM-Bench: A Comprehensive Benchmark for Evaluating Training-Free Acceleration in Large Visual-Language Models</div>
                 <div class="pub-meta">Zekun Wang, Minghua Ma, Zexin Wang, Rongchuan Mou, Liping Shan, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Wang Zekun</span>
-                    <span class="tag tag-author second">Ma Minghua</span>
-                    <span class="tag tag-author third">Wang Zexin</span>
-                </div>
+                <div class="pub-source">ACL 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">From Specific-MLLMs to Omni-MLLMs: A Survey on MLLMs Aligned with Multi-modalities</div>
                 <div class="pub-meta">Shixin Jiang, Jiafeng Liang, Jiyuan Wang, Xuan Dong, Heng Chang, Weichang Yu, Jinhua Du, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL(Findings)</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Jiang Shixin</span>
-                    <span class="tag tag-author second">Liang Jiafeng</span>
-                    <span class="tag tag-author third">Wang Jiyuan</span>
-                </div>
+                <div class="pub-source">ACL(Findings) 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Self-Critique Guided Iterative Reasoning for Multi-hop Question Answering</div>
                 <div class="pub-meta">Zheng Chu, Huiming Fan, Jingchang Chen, Qianyu Wang, Mingda Yang, Jiafeng Liang, Zhongjie Wang, Hao Li, Guo Tang, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL(Findings)</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Chu Zheng</span>
-                    <span class="tag tag-author second">Fan Huiming</span>
-                    <span class="tag tag-author third">Chen Jingchang</span>
-                </div>
+                <div class="pub-source">ACL(Findings) 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Breaking the Reasoning Barrier: A Survey on LLM Complex Reasoning through the Lens of Self-Evolution</div>
                 <div class="pub-meta">Tao He, Hao Li, Jingchang Chen, Runxuan Liu, Yixin Cao, Lizi Liao, Zihao Zheng, Zheng Chu, Jiafeng Liang, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL(Findings)</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">He Tao</span>
-                    <span class="tag tag-author second">Li Hao</span>
-                    <span class="tag tag-author third">Chen Jingchang</span>
-                </div>
+                <div class="pub-source">ACL(Findings) 2025</div>
+            </div>
+            
+            <div class="pub-card">
+                <div class="pub-title">Improved Diffusion-based Generative Model with Better Adversarial Robustness</div>
+                <div class="pub-meta">Zekun Wang, Mingyang Yi, Shuchen Xue, Zhenguo Li, Ming Liu, Bing Qin, Zhi-Ming Ma</div>
+                <div class="pub-source">ICLR 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Simulation-Free Hierarchical Latent Policy Planning for Proactive Dialogues</div>
                 <div class="pub-meta">Tao He, Lizi Liao, Yixin Cao, Yuanxing Liu, Yiheng Sun, Zerui Chen, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">AAAI</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">He Tao</span>
-                    <span class="tag tag-author second">Lizi Liao</span>
-                    <span class="tag tag-author third">Cao Yixin</span>
-                </div>
+                <div class="pub-source">AAAI 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">CFSP: An Efficient Structured Pruning Framework for LLMs with Coarse-to-Fine Activation Information</div>
                 <div class="pub-meta">Yuxin Wang, Minghua Ma, Zekun Wang, Jingchang Chen, Liping Shan, Qing Yang, Dongliang Xu, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">COLING</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Wang Yuxin</span>
-                    <span class="tag tag-author second">Ma Minghua</span>
-                    <span class="tag tag-author third">Wang Zekun</span>
-                </div>
+                <div class="pub-source">COLING 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Towards Faithful Multi-step Reasoning through Fine-Grained Causal-aware Attribution Reasoning Distillation</div>
                 <div class="pub-meta">Zheng Chu, Jingchang Chen, Zhongjie Wang, Guo Tang, Qianglong Chen, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">COLING</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Chu Zheng</span>
-                    <span class="tag tag-author second">Chen Jingchang</span>
-                    <span class="tag tag-author third">Wang Zhongjie</span>
-                </div>
+                <div class="pub-source">COLING 2025</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">GraCoRe: Benchmarking Graph Comprehension and Complex Reasoning in Large Language Models</div>
                 <div class="pub-meta">Zike Yuan, Ming Liu, Hui Wang, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">COLING</span>
-                    <span class="tag tag-year">2025</span>
-                    <span class="tag tag-author first">Yuan Zike</span>
-                    <span class="tag tag-author second">Liu Ming</span>
-                    <span class="tag tag-author third">Wang Hui</span>
-                </div>
+                <div class="pub-source">COLING 2025</div>
             </div>
-
+            
             <div class="pub-card">
-                <div class="pub-title">Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation</div>
-                <div class="pub-meta">Jingchang Chen, Hongxuan Tang, Zheng Chu, Qianglong Chen, Zekun Wang, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">NeurIPS</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Chen Jingchang</span>
-                    <span class="tag tag-author second">Tang Hongxuan</span>
-                    <span class="tag tag-author third">Chu Zheng</span>
-                </div>
+                <div class="pub-title">PRAE: Progressive Retrieval-Augmented Dynamic Knowledge Editing for Large Language Models</div>
+                <div class="pub-meta">Hao Li, Zheng Chu, Jiafeng Liang, Yuxin Wang, Wei Tang, Xun Mao, Kai Lv, Lei Chen, Ming Liu, Bing Qin</div>
+                <div class="pub-source">Frontiers of Computer Science 2025</div>
             </div>
 
         </div>
 
+        <!-- 2024 Papers -->
         <div class="year-block">
             <div class="year-title">2024</div>
+            
+             <div class="pub-card">
+                <div class="pub-title">Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation</div>
+                <div class="pub-meta">Jingchang Chen, Hongxuan Tang, Zheng Chu, Qianglong Chen, Zekun Wang, Ming Liu, Bing Qin</div>
+                <div class="pub-source">NeurIPS 2024</div>
+            </div>
 
             <div class="pub-card">
                 <div class="pub-title">Towards Benchmarking Situational Awareness of Large Language Models: Comprehensive Benchmark, Evaluation and Analysis</div>
                 <div class="pub-meta">Guo Tang, Zheng Chu, Wenxiang Zheng, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">EMNLP(Findings)</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Tang Guo</span>
-                    <span class="tag tag-author second">Chu Zheng</span>
-                    <span class="tag tag-author third">Zheng Wenxiang</span>
-                </div>
+                <div class="pub-source">EMNLP(Findings) 2024</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Infrared-LLaVA: Enhancing Understanding of Infrared Images in Multi-Modal Large Language Models</div>
                 <div class="pub-meta">Shixin Jiang, Zerui Chen, Jiafeng Liang, Yanyan Zhao, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">EMNLP(Findings)</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Jiang Shixin</span>
-                    <span class="tag tag-author second">Chen Zerui</span>
-                    <span class="tag tag-author third">Liang Jiafeng</span>
-                </div>
+                <div class="pub-source">EMNLP(Findings) 2024</div>
+            </div>
+            
+            <div class="pub-card">
+                <div class="pub-title">CogGPT: Unleashing the Power of Cognitive Dynamics on Large Language Models</div>
+                <div class="pub-meta">Yaojia Lv, Haojie Pan, Zekun Wang, Jiafeng Liang, Yuanxing Liu, Ruiji Fu, Ming Liu, Zhongyuan Wang, Bing Qin</div>
+                <div class="pub-source">EMNLP(Findings) 2024</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Navigate through Enigmatic Labyrinth. A Survey of Chain of Thought Reasoning: Advances, Frontiers and Future</div>
                 <div class="pub-meta">Zheng Chu, Jingchang Chen, Qianglong Chen, Weijiang Yu, Tao He, Haotian Wang, Weihua Peng, Ming Liu, Bing Qin, Ting Liu</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Chu Zheng</span>
-                    <span class="tag tag-author second">Chen Jingchang</span>
-                    <span class="tag tag-author third">Chen Qianglong</span>
-                </div>
+                <div class="pub-source">ACL 2024</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">TimeBench: A Comprehensive Evaluation of Temporal Reasoning Abilities in Large Language Models</div>
                 <div class="pub-meta">Zheng Chu, Jingchang Chen, Qianglong Chen, Weijiang Yu, Haotian Wang, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Chu Zheng</span>
-                    <span class="tag tag-author second">Chen Jingchang</span>
-                    <span class="tag tag-author third">Chen Qianglong</span>
-                </div>
+                <div class="pub-source">ACL 2024</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">BeamAggR: Beam Aggregation Reasoning over Multi-source Knowledge for Multi-hop Question Answering</div>
                 <div class="pub-meta">Zheng Chu, Jingchang Chen, Qianglong Chen, Haotian Wang, Kuan Zhu, Xiyuan Du, Weijiang Yu, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Chu Zheng</span>
-                    <span class="tag tag-author second">Chen Jingchang</span>
-                    <span class="tag tag-author third">Chen Qianglong</span>
-                </div>
+                <div class="pub-source">ACL 2024</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Planning Like Human: A Dual-process Framework for Dialogue Planning</div>
                 <div class="pub-meta">Tao He, Lizi Liao, Yixin Cao, Yuanxing Liu, Ming Liu, Zerui Chen, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">ACL</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">He Tao</span>
-                    <span class="tag tag-author second">Lizi Liao</span>
-                    <span class="tag tag-author third">Yixin Cao</span>
-                </div>
+                <div class="pub-source">ACL 2024</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">GUIDE: A Guideline-Guided Dataset for Instructional Video Comprehension</div>
                 <div class="pub-meta">Jiafeng Liang, Shixin Jiang, Zekun Wang, Haojie Pan, Zerui Chen, Ming Liu, Ruiji Fu, Zhongyuan Wang, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">IJCAI</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Liang Jiafeng</span>
-                    <span class="tag tag-author second">Jiang Shixin</span>
-                    <span class="tag tag-author third">Wang Zekun</span>
-                </div>
+                <div class="pub-source">IJCAI 2024</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">Decompose, Prioritize, and Eliminate: Dynamically Integrating Diverse Representations for Multimodal Named Entity Recognition</div>
                 <div class="pub-meta">Zihao Zheng, Zihan Zhang, Zexin Wang, Ruiji Fu, Ming Liu, Zhongyuan Wang, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">COLING</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Zheng Zihao</span>
-                    <span class="tag tag-author second">Zhang Zihan</span>
-                    <span class="tag tag-author third">Wang Zexin</span>
-                </div>
+                <div class="pub-source">LREC-COLING 2024 (Best Paper Candidate, Top 10)</div>
             </div>
 
             <div class="pub-card">
                 <div class="pub-title">SmartTrim: Adaptive Tokens and Attention Pruning for Efficient Vision-Language Models</div>
                 <div class="pub-meta">Zekun Wang, Jingchang Chen, Wangchunshu Zhou, Haichao Zhu, Jiafeng Liang, Liping Shan, Ming Liu, Dongliang Xu, Qing Yang, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">COLING</span>
-                    <span class="tag tag-year">2024</span>
-                    <span class="tag tag-author first">Wang Zekun</span>
-                    <span class="tag tag-author second">Chen Jingchang</span>
-                    <span class="tag tag-author third">Zhou Wangchunshu</span>
-                </div>
+                <div class="pub-source">LREC-COLING 2024</div>
+            </div>
+            
+            <div class="pub-card">
+                <div class="pub-title">Relational Graph-Bridged Image-Text Interaction: A Novel Method For Multi-Modal Relation Extraction</div>
+                <div class="pub-meta">Zihao Zheng, Tao He, Ming Liu, Zhongyuan Wang, Ruiji Fu, Bing Qin</div>
+                <div class="pub-source">ICASSP 2024</div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Relation Inquiry: A Novel Synchronous Joint Extractor for Entities and Relations</div>
+                <div class="pub-meta">Wei Tang, Zexin Wang, Xun Mao, Kai Lv, Xu Han, Ming Liu, Wei Wang, Bing Qin</div>
+                <div class="pub-source">CCKS-IJCKG 2024 (Best Paper)</div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Exploring & Exploiting High-Order Graph Structure for Sparse Knowledge Graph Completion</div>
+                <div class="pub-meta">Tao He, Ming Liu, Yixin Cao, Zekun Wang, Zihao Zheng, Bing Qin</div>
+                <div class="pub-source">Frontiers of Computer Science 2024</div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">VEM^2L: An Easy but Effective Framework for Fusing Text and Structure Knowledge on Sparse Knowledge Graph Completion</div>
+                <div class="pub-meta">Tao He, Ming Liu, Yixin Cao, Meng Qu, Zihao Zheng, Bing Qin</div>
+                <div class="pub-source">Data Mining and Knowledge Discovery 2024</div>
             </div>
 
         </div>
 
+        <!-- 2023 Papers -->
         <div class="year-block">
             <div class="year-title">2023</div>
 
             <div class="pub-card">
                 <div class="pub-title">MTGER: Multi-view Temporal Graph Enhanced Temporal Reasoning over Time-Involved Document</div>
                 <div class="pub-meta">Zheng Chu, Zekun Wang, Jiafeng Liang, Ming Liu, Bing Qin</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">EMNLP(Findings)</span>
-                    <span class="tag tag-year">2023</span>
-                    <span class="tag tag-author first">Zheng Chu</span>
-                    <span class="tag tag-author second">Zekun Wang</span>
-                    <span class="tag tag-author third">Jiafeng Liang</span>
-                </div>
+                <div class="pub-source">EMNLP(Findings) 2023</div>
+            </div>
+            
+            <div class="pub-card">
+                <div class="pub-title">GTR: A Grafting-Then-Reassembling Framework for Dynamic Scene Graph Generation</div>
+                <div class="pub-meta">Jiafeng Liang, Yuxin Wang, Zekun Wang, Ming Liu, Ruiji Fu, Zhongyuan Wang, Bing Qin</div>
+                <div class="pub-source">IJCAI 2023</div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">Conditional Knowledge Graph: Design, Dataset and a Preliminary Model</div>
+                <div class="pub-meta">Yaojia Lv, Zihao Zheng, Ming Liu, Bing Qin</div>
+                <div class="pub-source">CCKS 2023 (Best Paper)</div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">MALN: Multimodal Adversarial Learning Network for Conversational Emotion Recognition</div>
+                <div class="pub-meta">Minjie Ren, Xiangdong Huang, Jing Liu, Ming Liu, Xuanya Li, Anan Liu</div>
+                <div class="pub-source">IEEE Transactions on Circuits and Systems for Video Technology 2023</div>
+            </div>
+
+            <div class="pub-card">
+                <div class="pub-title">A speaker-aware multiparty dialogue discourse parser with heterogeneous graph neural network</div>
+                <div class="pub-meta">Jiaqi Li, Ming Liu, Yuxin Wang, Daxing Zhang, Bing Qin</div>
+                <div class="pub-source">Cognitive Systems Research 2023</div>
             </div>
 
         </div>
 
+        <!-- 2022 Papers -->
         <div class="year-block">
             <div class="year-title">2022</div>
 
             <div class="pub-card">
                 <div class="pub-title">Distilled Dual-Encoder Model for Vision-Language Understanding</div>
                 <div class="pub-meta">Zekun Wang, Wenhui Wang, Haichao Zhu, Ming Liu, Bing Qin, Furu Wei</div>
-                <div class="pub-tags">
-                    <span class="tag tag-conf">EMNLP</span>
-                    <span class="tag tag-year">2022</span>
-                    <span class="tag tag-author first">Wang Zekun</span>
-                    <span class="tag tag-author second">Wang Wenhui</span>
-                    <span class="tag tag-author third">Zhu Haichao</span>
-                </div>
+                <div class="pub-source">EMNLP 2022</div>
             </div>
 
         </div>
